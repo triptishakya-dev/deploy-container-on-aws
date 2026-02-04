@@ -1,4 +1,25 @@
 {
+  "name": "node-express-prisma-app",
+  "version": "1.0.0",
+  "description": "A Node.js backend using Express and Prisma ORM",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "prisma",
+    "backend",
+    "api"
+  ],
+  "author": "Tripti Shakya",
+  "license": "MIT",
   "dependencies": {
     "@prisma/client": "^6.19.2",
     "dotenv": "^17.2.3",
